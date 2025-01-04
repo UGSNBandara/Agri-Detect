@@ -1,0 +1,21 @@
+/* Ensure the body takes up the full height */
+body {
+  background: url("./assets/Back.jpg");
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center the app-container */
+.app-container {
+  display: flex;
+  flex-direction: column; /* Or row, depending on your layout */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #08440a, #0b0f07); /* Optional, just for visual clarity */
+  border-radius: 8px;
+}
