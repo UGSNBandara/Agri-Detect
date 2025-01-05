@@ -16,6 +16,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to right, #08440a, #0b0f07); /* Optional, just for visual clarity */
+  /*background: linear-gradient(to right, #08440a, #0b0f07); /* Optional, just for visual clarity */
   border-radius: 8px;
 }

@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section {
+    flex: 1;
+    transition: all 0.5s ease;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.section.visible {
+    visibility: visible;
+    opacity: 1;
+    width: 500;
+}
+
+.image-uploader {
+    text-align: center;
+    color: #034829;
+}
+
+.prediction-results {
+    text-align: center;
+    color: #034829;
+}
+
+.result {
+    color: #0a940c;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+hr {
+    border: none;
+    border-radius: 10px;
+    background-color: #12e115;
+    height: 5px;
+}
+
+.upload-button {
+    background-color: #106311 !important;
+}
+
+.upload-button:hover {
+    background-color: #0b8d0d !important;
+}
+
+
+.green-arrow {
+    width: 50px;
+    position: absolute;
+}
