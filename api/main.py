@@ -93,7 +93,8 @@ async def predict(
     
     return {
             "Health " : predicted_class2,
-            "confidence " : confidence
+            "confidence " : confidence,
+            "Type" : predicted_class,
             }
 
 

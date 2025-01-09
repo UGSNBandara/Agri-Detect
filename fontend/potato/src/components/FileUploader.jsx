@@ -52,6 +52,8 @@ const DiseaseDetails = ({ prediction }) => {
         manage: [],
     };
 
+
+
     return (
         <Box
             sx={{
@@ -85,16 +87,16 @@ const DiseaseDetails = ({ prediction }) => {
                 }}
             >
                 <a href="https://www.daraz.lk/soils-fertilisers-mulches/" target="blank">
-                <img
-                    className="ad-image"
-                    src={FAdd}
-                    alt="image of fertilizer"
-                    style={{
-                        marginRight: "8px", // Add some spacing between the image and text
-                        width: "150px", // Adjust the width as needed
-                        objectFit: "contain", // Ensure the image retains its aspect ratio
-                    }}
-                />
+                    <img
+                        className="ad-image"
+                        src={FAdd}
+                        alt="image of fertilizer"
+                        style={{
+                            marginRight: "8px", // Add some spacing between the image and text
+                            width: "150px", // Adjust the width as needed
+                            objectFit: "contain", // Ensure the image retains its aspect ratio
+                        }}
+                    />
                 </a>
                 {ad}
             </Typography>
@@ -245,6 +247,9 @@ const FileUploader = () => {
                             <Typography variant="h4" sx={{ marginBottom: 2 }}>
                                 Prediction Result
                             </Typography>
+                            {selectedVegetable === "finder" && (
+                                <Typography className="result">{prediction["Type"]}</Typography>
+                            )}
                             <Typography className="result">Health: {prediction["Health "]}</Typography>
                             <Typography className="result">
                                 Confidence: {Math.round(prediction["confidence "] * 100)}%
